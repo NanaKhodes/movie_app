@@ -1,0 +1,54 @@
+.footer {
+  background-color: yellow;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialmedia {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.socialmedia a {
+  margin: 0 10px;
+}
+.btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .socialmedia {
+    display: flex;
+   flex-direction: column;
+  }
+  .socialmedia a {
+    margin: 0 10px;
+  }
+
+  .copy{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 15px;
+    
+  }
+}

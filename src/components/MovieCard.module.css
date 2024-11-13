@@ -1,0 +1,13 @@
+.MovieCard {
+  width: 80%;
+  background-color: rgb(25, 25, 25);
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+ 
+}
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
