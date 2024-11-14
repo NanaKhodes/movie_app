@@ -29,3 +29,30 @@
     padding: 2px;
     border-radius: 5px;
 }
+.login {
+  background-color: darkslategrey;
+  width: 80%;
+  margin-top: 10px;
+  padding: 2px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  .login {
+    background-color: darkslategrey;
+    width: 50%;
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+  .p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .input{
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    color: black
+}
+}

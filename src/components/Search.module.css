@@ -1,0 +1,35 @@
+.container{
+    background-color: black;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+.input{
+    width: 50%;
+    height: 70px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.h1{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+   .h1{
+    font-size: 20px;
+   }
+   .container{
+    background-color: black;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+  .input{
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+}

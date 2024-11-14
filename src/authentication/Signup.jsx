@@ -43,9 +43,9 @@ const Signup = ({ onLogin }) => {
         />
         <button className={styles.btn} type="submit">Sign Up</button>
         <div>
-          <p>Already have an account?</p>{" "}
+          <p className={styles.p}>Already have an account?</p>
           <Link to="/login">
-            <button className={styles.btn}>Login</button>
+            <button className={styles.login}>Login</button>
           </Link>
         </div>
 

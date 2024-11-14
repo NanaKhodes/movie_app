@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Search.module.css"
 
 const Search = ({onSearch}) => {
  
@@ -6,14 +7,14 @@ const Search = ({onSearch}) => {
     onSearch(event.target.value)
   };
   return (
-    <div className="bg-yellow">
-      <h1 className="text-center text-3xl">
-        What would you <br />
-        like to watch
+    <div className={styles.container}>
+      <h1 className={styles.h1}>
+        What would you 
+        like to watch?
       </h1>
 
       <input
-        className="px-4 py-2 border w-full rounded-lg"
+        className={styles.input}
         type="search"
         placeholder="...Search here"
         onChange={handleChange}

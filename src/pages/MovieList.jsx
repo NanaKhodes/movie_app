@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
 import axios from 'axios';
-
 import MovieCard from '../components/MovieCard';
 import Search from '../components/Search';
 
@@ -31,26 +29,30 @@ const MovieList = () => {
     fetchMovies();
   }, []);
 
-  // const handleSearch = (query) => {
-  //   setSearchQuery(query);
-  // };
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
 
 
   if (loading) return <p>Loading movies...</p>;
   if (error) return <p>{error}</p>;
 
   return (
-    <div style={{}} className="grid grid-cols-2 gap-3 p-5 ml">
-      {/* <Search onSearch={handleSearch} /> */}
-      {movies
-        .filter((movie) =>
-          (movie.title || movie.original_name || "")
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase())
-        )
-        .map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
+    <div className="">
+      <div className="mb-3">
+        <Search onSearch={handleSearch} />
+      </div>
+      <div className="grid grid-cols-3 gap-1 ml-10">
+        {movies
+          .filter((movie) =>
+            (movie.title || movie.original_name || "")
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase())
+          )
+          .map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+      </div>
     </div>
   );
 }

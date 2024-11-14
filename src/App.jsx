@@ -20,17 +20,17 @@ function App({onLogin}) {
   return (
     <Router>
        <Nav />
-
       <Routes>
         <Route path="/" element={<Signup onLogin={handleLogin} />} />
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route
           path="/movies"
-          element={isLoggedIn ? <MovieList /> : <Signup />}
+          element={isLoggedIn ? <MovieList /> : <div>Please Signup or login to view movie</div>
+          }
         />
         <Route
           path="/movies/:id"
-          element={isLoggedIn ? <MovieDetails /> : <Signup />}
+          element={isLoggedIn ? <MovieDetails /> : <div>Please signup or login to view movie</div>}
         />
       </Routes>
       {isLoggedIn && <Footer /> }
