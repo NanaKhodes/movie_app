@@ -42,7 +42,7 @@ const MovieList = () => {
       <div className="mb-3">
         <Search onSearch={handleSearch} />
       </div>
-      <div className="grid grid-cols-3 gap-1 ml-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 ml-10">
         {movies
           .filter((movie) =>
             (movie.title || movie.original_name || "")
