@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: yellow;
+    background-color: whitesmoke;
     height: 60px;
     padding: 0 20px;
     position: sticky;
@@ -14,7 +14,7 @@
     font-weight: bold;
 }
  body {
-        background-color: rgb(55, 86, 96);
+        background-color: rgb(239, 22, 36);
         font-family: "Sour Gummy", sans-serif;
        
     }

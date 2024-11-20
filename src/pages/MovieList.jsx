@@ -5,7 +5,6 @@ import Search from '../components/Search';
 
 
 
-
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);

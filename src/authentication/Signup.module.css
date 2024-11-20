@@ -23,14 +23,16 @@
     margin-top: 10px;
 } */
 .btn{
-    background-color: darkslategrey;
+    background-color: whitesmoke;
+    color: black;
     width: 80%;
     margin-top: 10px;
     padding: 2px;
     border-radius: 5px;
 }
 .login {
-  background-color: darkslategrey;
+  background-color: whitesmoke;
+  color: black;
   width: 80%;
   margin-top: 10px;
   padding: 2px;
