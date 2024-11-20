@@ -4,17 +4,16 @@ import { auth } from "./firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { PacmanLoader } from "react-spinners";
-import styles from "./Signup.module.css"
+import styles from "./Signup.module.css";
 import Nav from "../components/Nav";
 
-const Login = ({onLogin}) => {
+const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
-  
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -26,17 +25,18 @@ const Login = ({onLogin}) => {
       setError("Failed to load movies");
     } finally {
       setTimeout(() => {
-        setLoading(false)
+        setLoading(false);
       }, 2000);
     }
   };
 
   return (
     <div className={styles.signup}>
-      <h2>Login</h2>
+      <h2 className={styles.h2}>Login</h2>
       <form className={styles.form} onSubmit={handleLogin}>
+        <h2 className={styles.h2}>Login</h2>
         <input
-        className={styles.input}
+          className={styles.input}
           type="email"
           placeholder="Email"
           value={email}
@@ -44,7 +44,7 @@ const Login = ({onLogin}) => {
           required
         />
         <input
-        className={styles.input}
+          className={styles.input}
           type="password"
           placeholder="Password"
           value={password}
@@ -56,12 +56,12 @@ const Login = ({onLogin}) => {
         </button>
         {error && <p>{error}</p>}
       </form>
-      <PacmanLoader
+      {/* <PacmanLoader
         loading={loading}
         size={20}
         aria-label="Loading Spinner"
         data-testid="loader"
-      />
+      /> */}
     </div>
   );
 };

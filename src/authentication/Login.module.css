@@ -3,6 +3,11 @@
   place-items: center;
   height: 50vh;
 }
+.h2{
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}
 .form {
   background-color: black;
   color: white;
@@ -13,7 +18,7 @@
   align-items: center;
 }
 .input {
-  width: 95%;
+  width: 100%;
   margin-top: 10px;
   padding: 10px;
 }

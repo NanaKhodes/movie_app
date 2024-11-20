@@ -7,7 +7,7 @@
 .form{
     background-color: black;
     color: white;
-    width: 50%;
+    width: 55%;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -22,13 +22,17 @@
 /* .label{
     margin-top: 10px;
 } */
+ 
+ .h2{
+  font-weight: bolder;
+  font-size: larger;
+ }
 .btn{
     background-color: whitesmoke;
     color: black;
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     padding: 2px;
-    border-radius: 5px;
 }
 .login {
   background-color: whitesmoke;

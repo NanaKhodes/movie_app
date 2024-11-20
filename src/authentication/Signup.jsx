@@ -23,7 +23,7 @@ const Signup = ({ onLogin }) => {
 
   return (
     <div className={styles.signup}>
-      <h2>Sign Up</h2>
+      <h2 className={styles.h2}>Sign Up</h2>
       <form className={styles.form} onSubmit={handleSignup}>
         <input
           className={styles.input}
